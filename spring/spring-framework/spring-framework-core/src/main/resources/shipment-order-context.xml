@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- simplest form of a bean definition, spring will instantiate this via the class's constructor -->
+    <bean id="shipmentOrderAdapter" class="demo.codesgrammr.adapter.ShipmentOrderAdapter"/>
+
+    <!-- this shows a dependency to shipmentOrderDao bean -->
+    <bean id="shipmentOrderService" class="demo.codesgrammr.service.ShipmentOrderService">
+        <constructor-arg ref="shipmentOrderDao"/>
+    </bean>
+
+    <bean id="shipmentOrderDao" class="demo.codesgrammr.dao.ShipmentOrderDao"/>
+
+    <!-- and other beans definitions...-->
+
+</beans>
