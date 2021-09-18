@@ -4,7 +4,7 @@ import org.springframework.context.MessageSource;
 
 import java.util.Locale;
 
-public class InternalizedAppMessage {
+public class InternalizedMessages {
 
     private MessageSource messageSource;
 

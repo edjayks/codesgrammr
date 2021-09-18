@@ -13,7 +13,7 @@
         </property>
     </bean>
 
-    <bean id="internalizedAppMessage" class="demo.codesgrammr.property.InternalizedAppMessage">
+    <bean id="internalizedAppMessage" class="demo.codesgrammr.property.InternalizedMessages">
         <property name="messageSource" ref="messageSource" />
     </bean>
 

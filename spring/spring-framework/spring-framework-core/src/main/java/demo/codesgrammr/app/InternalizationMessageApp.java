@@ -1,6 +1,6 @@
 package demo.codesgrammr.app;
 
-import demo.codesgrammr.property.InternalizedAppMessage;
+import demo.codesgrammr.property.InternalizedMessages;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -20,7 +20,7 @@ public class InternalizationMessageApp {
         assert applicationContext != null;
 
 
-        InternalizedAppMessage internalizedAppMessage = applicationContext.getBean(InternalizedAppMessage.class);
+        InternalizedMessages internalizedAppMessage = applicationContext.getBean(InternalizedMessages.class);
         assert internalizedAppMessage != null;
 
         internalizedAppMessage.showSuccessMessages(Locale.ENGLISH);
