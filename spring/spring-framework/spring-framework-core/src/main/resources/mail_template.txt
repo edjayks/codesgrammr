@@ -1,0 +1,6 @@
+Dear xxx,
+
+A sample email template, thank you.
+
+Best Regards,
+CEO of xyz
